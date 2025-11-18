@@ -1,0 +1,128 @@
+/* 🌈 Animated 4-Color Gradient Background */
+body {
+    font-family: Arial;
+    background: linear-gradient(135deg, #4a90e2, #7f5af0, #ff6b6b, #f7d794);
+    background-size: 400% 400%;
+    animation: gradientMove 15s ease infinite;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/* ✨ Gradient Animation */
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* 📦 Card Styling */
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.15);
+    width: 60%;
+    margin: auto;
+}
+
+/* 🔤 Headings */
+h1 {
+    color: #2e4a9b;
+}
+
+h3 {
+    color: #2e4a9b;
+}
+
+/* 🙍 Profile Name */
+.name {
+    font-size: 22px;
+    font-weight: bold;
+    color: #1a237e;
+}
+
+/* 📝 About Section */
+.about {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* 🔗 Links */
+ul li a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    object-fit: cover;
+    display: block;
+    margin: 20px auto;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+    position: relative;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 10px #ff0066, 0 0 20px #ff0066;
+    }
+    100% {
+        box-shadow: 0 0 20px #00e1ff, 0 0 40px #00e1ff;
+    }
+}
+.social-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.yt-button, .github-button {
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 8px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.25);
+    transition: 0.3s;
+}
+
+/* YouTube button style */
+.yt-button {
+    background: #ff0000;
+    color: white;
+}
+
+.yt-button:hover {
+    background: #cc0000;
+    transform: scale(1.05);
+}
+
+/* GitHub button style */
+.github-button {
+    background: #24292e;
+    color: white;
+}
+
+.github-button:hover {
+    background: #000000;
+    transform: scale(1.05);
+}
+
+.notes-body {
+    background: linear-gradient(135deg, #89f7fe, #66a6ff);
+    height: 100vh;
+    padding: 30px;
+}
+
+.notes-card {
+    background: white;
+    width: 60%;
+    margin: auto;
+    padding: 25px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.2);
+}
