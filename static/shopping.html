@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shopping Links</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* 🌈 Animated Gradient Background for Shopping Page */
+        body.shopping-body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ffe0e0, #ffe6f0, #e0f7ff, #e0ffe0);
+            background-size: 400% 400%;
+            animation: gradientMove 20s ease infinite;
+            min-height: 100vh;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        @keyframes gradientMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* 🌟 Shopping Buttons */
+        .shopping-btn {
+            display: block;
+            width: 300px;
+            margin: 20px auto;
+            padding: 15px 0;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+            transition: all 0.3s ease;
+            color: white;
+        }
+
+        .shopping-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+
+        /* Amazon Button */
+        .amazon-btn {
+            background: linear-gradient(45deg, #ff9900, #ffb84d);
+            color: black;
+        }
+
+        .amazon-btn:hover {
+            background: linear-gradient(45deg, #ffb84d, #ff9900);
+        }
+
+        /* Flipkart Button */
+        .flipkart-btn {
+            background: linear-gradient(45deg, #2874f0, #5395ff);
+        }
+
+        .flipkart-btn:hover {
+            background: linear-gradient(45deg, #5395ff, #2874f0);
+        }
+
+        /* Myntra Button */
+        .myntra-btn {
+            background: linear-gradient(45deg, #ff007f, #ff4db8);
+        }
+
+        .myntra-btn:hover {
+            background: linear-gradient(45deg, #ff4db8, #ff007f);
+        }
+
+        h1 {
+            color: #1a237e;
+            margin-bottom: 10px;
+        }
+
+        p.description {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body class="shopping-body">
+
+    <h1>Shopping Links</h1>
+    <p class="description">
+        <b>Explore trusted online stores for electronics, clothing, fashion, home essentials, and more. 
+        Click on the buttons below to visit each store.
+        </b>
+    </p>
+
+    <!-- Amazon -->
+    <a href="https://www.amazon.in" target="_blank" class="shopping-btn amazon-btn">
+        Amazon India – Shop for Electronics, Home Essentials & More
+    </a>
+
+    <!-- Flipkart -->
+    <a href="https://www.flipkart.com" target="_blank" class="shopping-btn flipkart-btn">
+        Flipkart – Best Deals on Fashion, Gadgets & Daily Needs
+    </a>
+
+    <!-- Myntra -->
+    <a href="https://www.myntra.com" target="_blank" class="shopping-btn myntra-btn">
+        Myntra – Trendy Fashion & Lifestyle Products
+    </a>
+
+</body>
+</html>

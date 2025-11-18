@@ -1,0 +1,206 @@
+/* 🌈 Animated 4-Color Gradient Background for Dashboard */
+body {
+    font-family: Arial;
+    background: linear-gradient(135deg, #4a90e2, #7f5af0, #ff6b6b, #f7d794);
+    background-size: 400% 400%;
+    animation: gradientMove 15s ease infinite;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/* ✨ Gradient Animation */
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* 📦 Card Styling */
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.15);
+    width: 60%;
+    margin: auto;
+}
+
+/* 🔤 Headings */
+h1, h2, h3 {
+    color: #2e4a9b;
+}
+
+/* 🙍 Profile Name */
+.name {
+    font-size: 22px;
+    font-weight: bold;
+    color: #1a237e;
+}
+
+/* 📝 About Section */
+.about {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* 🔗 Links */
+ul li a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+/* 👤 Profile Photo Glow */
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    object-fit: cover;
+    display: block;
+    margin: 20px auto;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+    position: relative;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    0% { box-shadow: 0 0 10px #ff0066, 0 0 20px #ff0066; }
+    100% { box-shadow: 0 0 20px #00e1ff, 0 0 40px #00e1ff; }
+}
+
+/* 🌐 Social Buttons */
+.social-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.yt-button, .github-button, .notes-button, .shop-button, .naukri-button {
+    display: inline-block;
+    padding: 12px 22px;
+    margin: 8px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.25);
+    transition: 0.3s ease;
+}
+
+/* YouTube */
+.yt-button { background: #ff0000; color: white; }
+.yt-button:hover { background: #cc0000; transform: scale(1.05); }
+
+/* GitHub */
+.github-button { background: #24292e; color: white; }
+.github-button:hover { background: #000000; transform: scale(1.05); }
+
+/* Notes Page */
+.notes-body { background: linear-gradient(135deg, #89f7fe, #66a6ff); height: 100vh; padding: 30px; }
+.notes-card { background: white; width: 60%; margin: auto; padding: 25px; text-align: center; border-radius: 12px; box-shadow: 0 3px 12px rgba(0,0,0,0.2); }
+.notes-button { background: linear-gradient(45deg, #6a11cb, #2575fc); color: white; }
+.notes-button:hover { background: linear-gradient(45deg, #2575fc, #6a11cb); transform: scale(1.05); }
+
+/* Shop Button on Dashboard */
+.shop-button {
+    background: linear-gradient(45deg, #ff3d00, #ff6e40);
+    color: white;
+}
+.shop-button:hover {
+    background: linear-gradient(45deg, #ff6e40, #ff3d00);
+    transform: scale(1.05);
+}
+
+/* Naukri Button */
+.naukri-button { background: linear-gradient(45deg, #00b4db, #0083b0); color: white; }
+.naukri-button:hover { background: linear-gradient(45deg, #0083b0, #00b4db); transform: scale(1.05); }
+
+/* 🌟 Shopping Page */
+.shopping-body {
+    background: linear-gradient(135deg, #ffe0e0, #ffe6f0, #e0f7ff, #e0ffe0);
+    min-height: 100vh;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.shopping-body h1, .shopping-body h2 {
+    color: #1a237e;
+}
+
+.shopping-btn {
+    display: block;         /* each button on separate line */
+    width: 250px;
+    margin: 15px auto;
+    padding: 12px 0;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: 0.3s ease;
+}
+
+/* Amazon */
+.amazon-btn { background: linear-gradient(45deg, #ff9900, #ffb84d); color: black; }
+.amazon-btn:hover { background: linear-gradient(45deg, #ffb84d, #ff9900); transform: translateY(-2px); }
+
+/* Flipkart */
+.flipkart-btn { background: linear-gradient(45deg, #2874f0, #5395ff); color: white; }
+.flipkart-btn:hover { background: linear-gradient(45deg, #5395ff, #2874f0); transform: translateY(-2px); }
+
+/* Myntra */
+.myntra-btn { background: linear-gradient(45deg, #ff007f, #ff4db8); color: white; }
+.myntra-btn:hover { background: linear-gradient(45deg, #ff4db8, #ff007f); transform: translateY(-2px); }
+
+
+/* 🌟 DevOps Tools Carousel */
+.tools-carousel {
+    width: 100%;
+    overflow: hidden;
+    margin: 40px 0;
+    padding: 15px 0;
+    border-radius: 12px;
+    background: linear-gradient(90deg, #4a90e2, #7f5af0, #ff6b6b, #f7d794);
+    background-size: 400% 400%;
+    animation: backgroundMove 15s ease infinite;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+/* Background gradient animation */
+@keyframes backgroundMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.carousel-track {
+    display: flex;
+    animation: scrollTools 30s linear infinite;
+}
+
+.carousel-item {
+    flex: 0 0 auto;
+    margin: 0 20px;
+}
+
+.carousel-item img {
+    height: 100px; /* adjust as needed */
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carousel-item img:hover {
+    transform: scale(1.2) rotate(-5deg);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+}
+
+/* Scroll animation */
+@keyframes scrollTools {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); } /* adjust based on number of images */
+}
+
+
+
+
+
+

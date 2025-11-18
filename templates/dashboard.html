@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="card">
+    <h1>WELCOME TO ARJUN</h1>
+    <img src="/static/arjun.jpg" class="profile-photo">
+    <p class="name">B ARJUN</p>
+     <p class="about-styled">
+    <b>He is a DevOps Engineer at Cognizant, where he focuses on designing, automating, 
+    and optimizing cloud infrastructure and deployment pipelines. With strong hands-on 
+    experience in CI/CD, cloud services, containerization, and Infrastructure as Code, 
+    he plays a key role in improving system reliability, scalability, and release efficiency.
+    </b>
+   </p>
+
+    {% if current_path %}
+        <h3>Browsing: {{ current_path }}</h3>
+    {% endif %}
+
+    {% if dirs or files %}
+        <h3>Folders</h3>
+        <ul>
+            {% for d in dirs %}
+                <li><a href="/browse?path={{ d }}">{{ d.name }}</a></li>
+            {% endfor %}
+        </ul>
+
+        <h3>Files</h3>
+        <ul>
+            {% for f in files %}
+                <li>{{ f.name }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+    {% endif %}
+    
+ 
+   <div class="tools-carousel">
+    <div class="carousel-track">
+        <div class="carousel-item"><img src="{{ url_for('static', filename='tools/docker.png') }}" alt="Docker"></div>
+        <div class="carousel-item"><img src="{{ url_for('static', filename='tools/kubernetes.png') }}" alt="Kubernetes"></div>
+        <div class="carousel-item"><img src="{{ url_for('static', filename='tools/jenkins.png') }}" alt="Jenkins"></div>
+        <div class="carousel-item"><img src="{{ url_for('static', filename='tools/ansible.png') }}" alt="Ansible"></div>
+        <div class="carousel-item"><img src="{{ url_for('static', filename='tools/terraform.png') }}" alt="Terraform"></div>
+        <div class="carousel-item"><img src="{{ url_for('static', filename='tools/prometheus.png') }}" alt="Prometheus"></div>
+        <!-- Add more images as needed -->
+        <!-- Repeat images to make the scrolling seamless -->
+        <div class="carousel-item"><img src="{{ url_for('static', filename='tools/docker.png') }}" alt="Docker"></div>
+        <div class="carousel-item"><img src="{{ url_for('static', filename='tools/kubernetes.png') }}" alt="Kubernetes"></div>
+    </div>
+
+
+
+    <div class="social-links">
+
+    <a href="https://www.youtube.com/@arjundevops" 
+       target="_blank" 
+       class="yt-button">
+       My YouTube Channel
+    </a>
+
+    <a href="https://github.com/arjun-devops-scm?tab=repositories" 
+       target="_blank" 
+       class="github-button">
+       My GitHub Profile
+    </a>
+    <a href="{{ url_for('notes') }}" class="notes-button">
+    Go to Documents link
+</a>
+    <a href="{{ url_for('static', filename='shopping.html') }}" class="shop-button">
+        Go to Shopping Page
+    </a>
+
+</div>
+</div>
+
+</body>
+</html>
